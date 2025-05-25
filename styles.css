@@ -60,14 +60,29 @@ header {
 }
 
 .summary-content {
-    max-width: 800px;
+    /* max-width: 600px; */
     margin: 0 auto;
     font-size: 1.1em;
     line-height: 1.8;
     color: #2c3e50;
     text-align: justify;
     border-top: 1px solid #eee;
-    padding-top: 20px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.summary-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    border-radius: 8px 8px 0 0;
 }
 
 .summary-content p {
